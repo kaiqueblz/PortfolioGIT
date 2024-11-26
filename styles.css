@@ -1,0 +1,257 @@
+/* Resetando estilos e aplicando o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fontes e cores principais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ff6f61;
+}
+
+header p {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #ccc;
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+    transform: translateY(-2px);
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos das seções */
+section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Seção Sobre Mim */
+.about {
+    background-color: #fff;
+}
+
+/* Seção Habilidades Técnicas */
+.skills {
+    background-color: #f7f7f7;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skills ul li {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 15px 25px;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skills ul li:hover {
+    transform: translateY(-5px);
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Seção Projetos */
+.projects {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adiciona um layout responsivo */
+    gap: 30px;
+    justify-items: center; /* Centraliza os projetos dentro do grid */
+    max-width: 1200px;  /* Limita a largura dos projetos */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 25px;
+    width: 100%;
+    max-width: 350px;  /* Limita a largura dos cards */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project a {
+    font-size: 1.1em;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project a {
+    font-size: 1.1em;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+/* Seção Contato */
+.contact {
+    background-color: #f7f7f7;
+}
+
+.contact a {
+    color: #007bff;
+    font-weight: 500;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+
+    .skills ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 2.2em;
+    }
+}

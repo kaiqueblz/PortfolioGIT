@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fontes e cores principais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #ccc;
+}
+
+/* Seção de Certificações */
+.certifications {
+    padding: 60px 0;
+}
+
+.certifications h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.certifications ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+}
+
+.cert-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background-color: #ff6f61;
+    color: white;
+}
+
+.cert-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.cert-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cert-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Botão Voltar */
+.back-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-btn {
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .cert-card {
+        width: 90%;
+    }
+
+    .certifications ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .certifications h2 {
+        font-size: 2.4em;
+    }
+}
